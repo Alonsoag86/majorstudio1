@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--p5 core library CDN-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+
+       <script>
+        
+         var rectX = 0;
+         
+            function setup() {
+                createCanvas(600, 600);
+                background('white');
+                
+                
+            }
+            
+            function draw() {
+                fill(150, 150, 150, 38);
+                rect(rectX, rectX, 50, 50);
+                rectX= second();
+                fill(50,50,50,38);
+                line(minute(), 60, minute(), 200);
+                line(hour(), 120, hour(), 300);
+                
+               
+                
+                
+            }
+            
+            function mousePressed() {
+                background('white');
+            }
+           
+
+/*
+var circle = {
+             x:200,
+             y:200
+             }
+
+function setup() {
+                 createCanvas(windowWidth, windowHeight);
+                 frameRate(9);
+                 }
+                 
+function draw () {
+                 background('black');
+                 fill(102,205,170);
+                 circle.x = random(0,width);
+                 circle.y = random(0,height);
+                 ellipse (circle.x, circle.y, 24, 24);
+                 fill('white');
+                 rect(mouseX, height*3/4, 85, 5);
+                 if (x > width) {
+                     
+                 }
+                 
+                 }
+
+*/
+       
+ </script>   
+
+</head>
+   
+</html>
